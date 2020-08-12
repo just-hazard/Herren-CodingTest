@@ -9,7 +9,7 @@ public class ConsonantAlgorithm {
         };
 
         for(char c : str.toCharArray()) {
-            if(c - 0xAC00 >= 0 && c - 0xAC00 <= 11172)
+            if(c >= 0xAC00 && c - c <= 0xD7A3)
             {
                 int result = (((c-0xAC00) - ((c-0xAC00) % 28))/28)/21;
                 answer += chs[result];
